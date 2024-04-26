@@ -9,7 +9,7 @@
     justify-content: flex-end;
     align-items: flex-end;
     min-height: 100vh;
-    overflow: hidden;
+    overflow-x: hidden;
   }
  /* Custom Scrollbar */
 ::-webkit-scrollbar {
