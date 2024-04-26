@@ -1,0 +1,1267 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+      <link rel="icon" href="/assets/img/title.ico" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <title>Bibek Thapa - Developer</title>
+    <!-- animation on scroll library -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <!--cdn links and jquery+fontawesome link for testimonial tab-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/fontawesome.min.css"
+      integrity="sha512-UuQ/zJlbMVAw/UU8vVBhnI4op+/tFOpQZVT+FormmIEhRSCnJWyHiBbEVgM4Uztsht41f3FzVWgLuwzUqOObKw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"
+      integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
+      integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!--cdn for about me page-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <!-- styles for documents -->
+   <link rel="stylesheet" href="assets/css/index.css">
+  </head>
+  <body data-aos="zoom-in" data-aos-duration="" data-aos-delay="0">
+    <div class="loader-container" id="loader">
+      <div class="spiral-loader"></div>
+    </div>
+    <div class="wholeBodyContainer" >  
+    <header>
+      <nav>
+        <div class="nav-bar">
+          <i class="bx bx-menu sidebarOpen"></i>
+          <span class="logo navLogo"><a href="#">Bibek's Portfolio</a></span>
+
+          <div class="menu">
+            <div class="logo-toggle">
+              <span class="logo"><a href="#">Bibek's Portfolio</a></span>
+              <i class="bx bx-x siderbarClose"></i>
+            </div>
+
+            <ul class="nav-links">
+              <li><a href="#">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#skills">Skills</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="darkLight-searchBox">
+            <div class="dark-light">
+              <i class="bx bx-moon moon"></i>
+              <i class="bx bx-sun sun"></i>
+            </div>
+            <div class="searchBox">
+              <div class="searchToggle">
+                <i class="bx bx-x cancel"></i>
+                <i class="bx bx-search search"></i>
+              </div>
+              <div class="search-field">
+                <input type="text" id="searchText" placeholder="Search..." />
+                <i class="bx bx-search" id="findButton"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="container">
+       
+        <section class="firstSection">
+          <div class="leftSection" data-aos="fade-in" data-aos-duration="4000">
+            <div>Hey, My name is <span class="purple">Bibek</span></div>
+            <div>and I am Enthusiastic</div>
+            <div>
+              <span id="element"></span>
+          
+           
+              <div class="buttons">
+                <button onclick="downloadResume()">Download Resume</button>
+                <button onclick="navigateToContact()">Hire Me </button>
+              </div>
+            </div>
+          </div>
+          <div class="rightSection" data-aos="zoom-in" data-aos-duration="3000">
+            <img src="assets/img/bibekpic.jpeg" alt="developer pic" />
+          </div>
+        </section>
+      </div>
+      <hr />
+    </main>
+    <section class="section about-section gray-bg" id="about">
+      <div class="container">
+        <div class="row align-items-center flex-row-reverse">
+          <div class="col-lg-6 animate__animated animate__fadeInLeft">
+            <div class="about-text go-to">
+              <div
+                class="about__container"
+                data-aos="fade-right"
+                data-aos-offset="80"
+                data-aos-duration="1000"
+              >
+                <h3 class="dark-color">About Me</h3>
+                <h6 class="theme-color lead">
+                  A Lead Web &amp; App developer in Nepal
+                </h6>
+                <p>
+                  I <mark>design and develop</mark> services for customers of
+                  all sizes, specializing in creating stylish, modern websites,
+                  web services and Apps. My passion is to design digital user
+                  experiences through the bold interface and meaningful
+                  interactions.
+                </p>
+              </div>
+              <div class="row about-list">
+                <div class="col-md-6">
+                  <div
+                    class="media animate__animated animate__fadeInUp animate__delay-1s"
+                    data-aos="fade-up"
+                     data-aos-offset="100"
+                   data-aos-duration="1000"
+                  >
+                    <label>Name</label>
+                    <p>Bibek Thapa</p>
+                  </div>
+                  <div
+                    class="media animate__animated animate__fadeInUp animate__delay-2s"
+                    data-aos="fade-up"
+                    data-aos-offset="60"
+                    data-aos-delay="200"
+                  data-aos-duration="1000"
+                  >
+                    <label>Age</label>
+                    <p>19 Yr</p>
+                  </div>
+                  <div
+                    class="media animate__animated animate__fadeInUp animate__delay-3s"
+                    data-aos="fade-up"
+                    data-aos-offset="100"
+                  data-aos-duration="1000"
+                  data-aos-delay="250"
+                  >
+                    <label>Country</label>
+                    <p>Nepal</p>
+                  </div>
+                  <div
+                    class="media animate__animated animate__fadeInUp animate__delay-4s"
+                    data-aos="fade-up"  
+                    data-aos-offset="100"
+                  data-aos-duration="1000"
+                   data-aos-delay="400"
+                  >
+                    <label>Address</label>
+                    <p>Jhapa, Nepal</p>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div
+                    class="media animate__animated animate__fadeInUp animate__delay-1s"
+                    data-aos="fade-up"
+                    data-aos-offset="100"
+                  data-aos-duration="1000"
+                  >
+                    <label>E-Mail</label>
+                    <p style="font-size: 13px">bibekthapa9746@gmail.com</p>
+                  </div>
+                  <div
+                    class="media animate__animated animate__fadeInUp animate__delay-2s"
+                    data-aos="fade-up"
+                    data-aos-offset="60"
+                    data-aos-delay="200"
+                  data-aos-duration="1000"
+                  >
+                    <label>Phone</label>
+                    <p>+977 974 68666 14</p>
+                  </div>
+                  <div
+                    class="media animate__animated animate__fadeInUp animate__delay-3s"
+                    data-aos="fade-up"
+                    data-aos-offset="100"
+                    data-aos-delay="250"
+                  data-aos-duration="1000"
+                  >
+                    <label>Website</label>
+                    <p style="font-size: 13px">www.bibekthapa1.com.np</p>
+                  </div>
+                  <div
+                    class="media animate__animated animate__fadeInUp animate__delay-4s"
+                    data-aos="fade-up"
+                    data-aos-offset="100"
+                  data-aos-duration="1000"
+                  data-aos-delay="400"
+                  >
+                    <label>Status</label>
+                    <p>Available For Freelance</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-lg-6 animate__animated animate__fadeInRight animate__delay-1s"
+            data-aos="fade-left"
+            data-aos-offset="150"
+            data-aos-duration="1000"
+          >
+            <div class="about-avatar">
+              <img
+                src="assets/img/bibekabout.jpg"
+                title=""
+                alt="Profile Picture"
+                class="about1"
+              />
+            </div>
+          </div>
+        </div>
+        <div
+          class="counter animate__animated animate__fadeInUp animate__delay-2s"
+               data-aos="fade-up"
+                    data-aos-offset="120"
+                  data-aos-duration="1000"
+        >
+        <div class="row">
+          <div class="col-6 col-lg-3">
+            <div class="count-data text-center">
+              <i class="fas fa-smile counter-icon"></i>
+              <h6 class="count h2" data-count="25">0</h6>
+              <p class="m-0px font-w-600">Happy Clients</p>
+            </div>
+          </div>
+          <div class="col-6 col-lg-3">
+            <div class="count-data text-center">
+              <i class="fas fa-briefcase counter-icon"></i>
+              <h6 class="count h2" data-count="70">0</h6>
+              <p class="m-0px font-w-600">Project Completed</p>
+            </div>
+          </div>
+          <div class="col-6 col-lg-3">
+            <div class="count-data text-center">
+              <i class="fas fa-clock counter-icon"></i>
+              <h6 class="count h2" data-count="1500">0</h6>
+              <p class="m-0px font-w-600">Hours Of Support</p>
+            </div>
+          </div>
+          <div class="col-6 col-lg-3">
+            <div class="count-data text-center">
+              <i class="fas fa-trophy counter-icon"></i>
+              <h6 class="count h2" data-count="10">0</h6>
+              <p class="m-0px font-w-600">Awards</p>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+    </section>
+    <hr id="skills"/>
+    <div class="section-title" data-aos="fade-up"
+    data-aos-offset="80"
+  data-aos-duration="1000" >
+      <h2>FACTS</h2>
+    </div>
+    <div class="container-3 ">
+      <div class="col" id="programming" class="media animate__animated animate__fadeInUp animate__delay-1s"
+                    data-aos="fade-left"
+                    data-aos-offset="100"
+                  data-aos-duration="1000">
+        <h2 class="titulo">Programming</h2>
+        <ul class="skill">
+          <li><span class="blueline"></span><em>HTML(90%)</em></li>
+          <li><span class="blueline"></span><em>CSS(70%)</em></li>
+          <li><span class="blueline"></span><em>PHP(60%)</em></li>
+          <li><span class="blueline"></span><em>Javascript(75%)</em></li> 
+          <li><span class="blueline"></span><em>Java(55%)</em></li>
+        </ul>
+      </div>
+      <div class="col" id="platforms"  data-aos="fade-up"
+                    data-aos-offset="100"
+                  data-aos-duration="1000">
+        <h2 class="plataformas titulo">Platforms</h2>
+        <ul class="skill">
+          <li><span class="greenline"></span><em>Wordpress(80%)</em></li>
+          <li><span class="greenline"></span><em>Bootstrap(60%)</em></li>
+          <li><span class="greenline"></span><em>Node.js(40%)</em></li>
+          <li><span class="greenline"></span><em>Blogger(70%)</em></li>
+          <li><span class="greenline"></span><em>React.js(60%)</em></li>
+        </ul>
+      </div>
+      <div class="col" id="programs"  data-aos="fade-right"
+                    data-aos-offset="100"
+                  data-aos-duration="1000">
+        <h2 class="programas titulo">Programms</h2>
+        <ul class="skill">
+          <li><span class="redline"></span><em>Dreamweaver(90%)</em></li>
+          <li><span class="redline"></span><em>VS Code(80%)</em></li>
+          <li><span class="redline"></span><em>Photoshop(70%)</em></li>
+          <li><span class="redline"></span><em>Premiere(60%)</em></li>
+          <li><span class="redline"></span><em>Excel(70%)</em></li>
+        </ul>
+      </div>
+    </div>
+
+    <hr />
+
+    <div class="container-2">
+      <section class="secondSection">
+        <div class="section-title" data-aos="fade-up"
+    data-aos-offset="80"
+  data-aos-duration="1000">
+          <h2>Work Experiences</h2>
+        </div>
+        <div class="box" >
+          <div class="vertical" data-aos="fade-left"
+    data-aos-offset="80"
+  data-aos-duration="1000"
+  data-aos-delay="400">
+            <img src="assets/img/html.png" alt="HTML5" />
+            <div class="vertical-title">
+              HTML/CSS
+              <div>(2021 Sept-2022 Jan)</div>
+            </div>
+            <div class="vertical-desc">
+              Proficient in HTML and CSS, acquired skills, adept at building
+              visually engaging and responsive web interfaces. Done many project
+              using these languages.
+            </div>
+          </div>
+          <!-- Add more vertical divs here -->
+          <div class="vertical" data-aos="fade-left"
+    data-aos-offset="80"
+  data-aos-duration="1000"
+  data-aos-delay="200">
+            <img src="assets/img/js.png" alt="JavaScript" />
+            <div class="vertical-title">
+              JavaScript
+              <div>(2022 Jan- May)</div>
+            </div>
+            <div class="vertical-desc">
+              Acquired proficiency in JavaScript. Skilled in implementing
+              interactive and dynamic features for web applications. Familiar to
+              the modern JS libraries .
+            </div>
+          </div>
+          <div class="vertical" data-aos="fade-in"
+    data-aos-offset="80"
+  data-aos-duration="1000">
+            <img src="assets/img/php.png " alt="PHP" />
+            <div class="vertical-title">
+              PHP/MySQL
+              <div>(2023 Sept - Dec)</div>
+            </div>
+            <div class="vertical-desc">
+              Cultivated proficiency in PHP and MySQL. adept at developing
+              dynamic websites and harnessing database capabilities for robust
+              solutions. Created Database driven apps .
+            </div>
+          </div>
+          <div class="vertical"data-aos="fade-right"
+    data-aos-offset="80"
+  data-aos-duration="1000"
+  data-aos-delay="200">
+            <img src="assets/img/java.png" alt="Java" />
+            <div class="vertical-title">
+              Java/DSA
+              <div>(2024 Oct-2024 Apr)</div>
+            </div>
+            <div class="vertical-desc">
+              Mastered Java and Data Structures & Algorithms. Skilled in
+              crafting efficient and scalable software solutions with strong
+              algorithmic problem-solving abilities.
+            </div>
+          </div>
+          <div class="vertical" data-aos="fade-right"
+    data-aos-offset="80"
+  data-aos-duration="1000"
+  data-aos-delay="400">
+            <img src="assets/img/react.png" alt="React/Express" />
+            <div class="vertical-title">
+              React/Express
+              <div>(2024 Apr-Current)</div>
+            </div>
+            <div class="vertical-desc">
+              Currently mastering React and Express. focusing on building
+              dynamic web applications using frontend and backend for a
+              comprehensive learning experience.
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <hr id="services" />
+    <div>
+      <section class="service-grid pb-5 pt-5" data-aos="fade-up" >
+        <div class="container-4" >
+          <div class="section-title" >
+            <h2>Services</h2>
+          </div>
+          <div class="row">
+            <div class="col-lg-4 col-md-6 text-center mb-3" data-aos="zoom-in" data-aos-delay="100">
+              <div class="serviceWebApplication">
+                <div class="service-wrap">
+                  <div class="service-icon">
+                    <span
+                      ><img
+                        src="assets/img/api.png"
+                        alt="web Application"
+                        style="width: 50px"
+                    /></span>
+                  </div>
+                  <a href="#"><h4>Web Application</h4></a>
+                  <p>
+                    Custom website design and development. Front-end
+                    development. Back-end development. CMS development...
+                  </p>
+                  <a
+                    href="https://en.wikipedia.org/wiki/Web_application"
+                    target="_blank"
+                    >Read More</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 text-center mb-3"  data-aos="zoom-in" data-aos-delay="200">
+              <div class="serviceMobileAppDevelopment">
+                <div class="service-wrap">
+                  <div class="service-icon">
+                    <span
+                      ><img
+                        src="assets/img/app-development.png"
+                        alt="app-development"
+                        style="width: 50px"
+                      />
+                    </span>
+                  </div>
+                  <a href="#"><h4>Mobile App Development</h4></a>
+                  <p>
+                    Custom mobile app design and development. Front-end and
+                    Back-end Development. API development/integration...
+                  </p>
+                  <a
+                    href="https://en.wikipedia.org/wiki/Mobile_app_development"
+                    target="_blank"
+                    >Read More</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 text-center mb-3"  data-aos="zoom-in" data-aos-delay="300">
+              <div class="serviceDesktopAppDevelopment">
+                <div class="service-wrap">
+                  <div class="service-icon">
+                    <span
+                      ><img
+                        src="assets/img/applications.png"
+                        alt="desktop-app Development"
+                        style="width: 50px"
+                    /></span>
+                  </div>
+                  <a href="#"><h4>Desktop App Development</h4></a>
+                  <p>
+                    (UI) and (UX) design. Cross-platform development.
+                    Comprehensive testing and quality assurance...
+                  </p>
+                  <a
+                    href="https://radixweb.com/blog/desktop-application-development-guide"
+                    target="_blank"
+                    >Read More</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 text-center mb-3"  data-aos="zoom-in" data-aos-delay="100">
+              <div class="servicePlugins">
+                <div class="service-wrap">
+                  <div class="service-icon">
+                    <span
+                      ><img
+                        src="assets/img/service.png"
+                        alt="services and Plugins"
+                        style="width: 50px"
+                    /></span>
+                  </div>
+                  <a href="#"><h4>Customized Plugins</h4></a>
+                  <p>
+                    Custom software development tailored to client's specific
+                    needs. Development of custom plugins or extensions...
+                  </p>
+                  <a
+                    href="https://en.wikipedia.org/wiki/Search_engine_optimization"
+                    target="_blank"
+                    >Read More</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 text-center mb-3"  data-aos="zoom-in" data-aos-delay="200">
+              <div class="serviceCyberSecurity">
+                <div class="service-wrap">
+                  <div class="service-icon">
+                    <span
+                      ><img
+                        src="assets/img/cybersecurity.png"
+                        alt="cybersecurity"
+                        style="width: 50px"
+                    /></span>
+                  </div>
+                  <a href="#"><h4>Cybersecurity Services</h4></a>
+                  <p>
+                    Vulnerability Assessment. Penetration Testing. Security
+                    Audits. Incident Response. Security Awareness Training...
+                  </p>
+                  <a
+                    href="https://sohosolutionsinc.com/what-are-cyber-security-services-importance/#:~:text=Cyber%20security%20services%20are%20professional,recommend%20solutions%20to%20mitigate%20risks."
+                    target="_blank"
+                    >Read More</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 text-center mb-3"  data-aos="zoom-in" data-aos-delay="300">
+              <div class="serviceConsultancy">
+                <div class="service-wrap">
+                  <div class="service-icon">
+                    <span
+                      ><img
+                        src="assets/img/consultant.png"
+                        alt="IT Consulting"
+                        style="width: 50px"
+                    /></span>
+                  </div>
+                  <a href="#"><h4>IT Consulting</h4></a>
+                  <p>
+                    Technology Strategy Development. Infrastructure Planning.
+                    System Architecture Design. Cloud Computing Advisory...
+                  </p>
+                  <a
+                    href="https://en.wikipedia.org/wiki/Information_technology_consulting"
+                    target="_blank"
+                    >Read More</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <hr />
+    <section class="testimonial_wrap">
+      <div class="container">
+        <div class="section-title"  data-aos="fade-up">
+          <h2>Testimonials</h2>
+        </div>
+        <div class="slider"  data-aos="fade-up" data-aos-offset="200">
+          <div class="item">
+            <div class="inner">
+              <div class="thumb">
+                <img src="assets/img/pradip.jpg" alt="profile" />
+              </div>
+              <div class="excert">
+                <p>
+                  Thanks to Mr. Bibek's exceptional insight and dedication, our
+                  accounting processes have reached new heights of efficiency.
+                  His tailored software solutions not only revolutionized our
+                  operations but also streamlined our workflows, enabling us to
+                  handle even the most complex tasks with ease and precision.
+                  His innovative approach to problem-solving and attention to
+                  detail have been instrumental in driving our success.
+                </p>
+              </div>
+              <div class="info">
+                <p>
+                  <i class="fa fa-quote-right"></i>
+                  <a
+                    href="https://www.facebook.com/PradipDhakal221?mibextid=ZbWKwL"
+                    target="_blank"
+                    >Pradip Dhakal</a
+                  >
+                  <span>Auditor</span><br />
+                  <span>Mainali Enjila & Associates</span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="inner">
+              <div class="thumb">
+                <img src="assets/img/dipak.jpg" alt="profile" />
+              </div>
+              <div class="excert">
+                <p>
+                  Mr. Bibek Thapa is instrumental in maintaining our software
+                  stability and efficiency. His vigilant monitoring and
+                  proactive updates ensure smooth operations, making them an
+                  indispensable asset to our company's success. consistently
+                  demonstrates a deep understanding of our infrastructure,
+                  offering invaluable insights and solutions that contribute to
+                  the overall success of our organization.
+                </p>
+              </div>
+              <div class="info">
+                <p>
+                  <i class="fa fa-quote-right"></i>
+                  <a href="#">Dipak Thapa</a>
+                  <span>Manager</span><br />
+                  <span>Purba Paschim Nepal Yatayat Pvt.Ltd.</span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="inner">
+              <div class="thumb">
+                <img src="assets/img/anil.jpg" alt="profile" />
+              </div>
+              <div class="excert">
+                <p>
+                  Working alongside him during the development of my project has
+                  been an invaluable experience. His expertise and dedication
+                  as a computer engineer have significantly enhanced the
+                  project's progress and quality. His commitment to excellence
+                  and passion for technology make them an indispensable
+                  teammate, and I am grateful for his invaluable contributions
+                  to our project's success.
+                </p>
+              </div>
+              <div class="info">
+                <p>
+                  <i class="fa fa-quote-right"></i>
+                  <a href="#">Anil Chauhan</a>
+                  <span>Computer Engg. Student</span>
+                  <br />
+                  <span>Purwanchal University</span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <hr id="contact"/>
+
+    <div
+      class="contact__container"
+      
+      data-aos="fade-up" data-aos-offset="200"
+    >
+      <div class="container-5">
+        <div class="content">
+          <div class="left-side">
+            <div class="address details">
+              <i class="fas fa-map-marker-alt"></i>
+              <div class="topic">Address</div>
+              <div class="text-one">Jhapa, Nepal</div>
+              <div class="text-two">Kankai 01</div>
+            </div>
+            <div class="phone details">
+              <i class="fas fa-phone-alt"></i>
+              <div class="topic">Phone</div>
+              <div class="text-one">+977 974 6866 614</div>
+              <div class="text-two">+977 981 7079 251</div>
+            </div>
+            <div class="email details">
+              <i class="fas fa-envelope"></i>
+              <div class="topic">Email</div>
+              <div class="text-one">bibekthapa9746@gmail.com</div>
+              <div class="text-two">blacksoul98880@gmail.com</div>
+            </div>
+          </div>
+          <div class="right-side">
+            <div class="topic-text">Send me a message</div>
+            <p>
+              Feel free to reach out to me with any requests or questions
+              related to any work you'd like me to assist with. I'm here to help
+              and would be delighted to hear from you!.
+            </p>
+            <form action="https://api.web3forms.com/submit" method="POST" id="myForm" onsubmit="return validateForm()">
+              <input type="hidden" name="access_key" value="2cceb2e3-1f56-4a16-aa14-d0c874381092">
+              <div class="input-box">
+                <input type="text" placeholder="Enter your name" name="name" id="name" required />
+              </div>
+              <div class="input-box">
+                <input type="text" placeholder="Enter your email" id="email" name="email" required />
+              </div>
+              <div class="input-box message-box">
+                <textarea placeholder="Enter your message" id="message" name="message" required></textarea>
+              </div>
+              <div class="buttonSub">
+                <button type="submit">Submit</button>
+              </div>
+              <div id="errorMessage" class="error-message"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr />
+     <a id="backToTop" class="back-to-top" href="#">
+        <i class="fa-solid fa-arrow-up"></i>
+      </a>
+    <div class="footer_adj">
+      <footer class="footer">
+        <div class="waves">
+          <div class="wave" id="wave1"></div>
+          <div class="wave" id="wave2"></div>
+          <div class="wave" id="wave3"></div>
+          <div class="wave" id="wave4"></div>
+        </div>
+        <ul class="social-icon">
+          <li class="social-icon__item">
+            <a
+              class="social-icon__link"
+              href="https://www.facebook.com/bibek9921"
+              target="_blank"
+            >
+              <div class="facebook">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </div>
+            </a>
+          </li>
+          <li class="social-icon__item">
+            <a
+              class="social-icon__link"
+              href="https://www.youtube.com/@TripleVerseNepal"
+              target="_blank"
+            >
+              <div class="youtube">
+                <ion-icon name="logo-youtube"></ion-icon>
+              </div>
+            </a>
+          </li>
+          <li class="social-icon__item">
+            <a
+              class="social-icon__link"
+              href="https://www.linkedin.com/in/bibek-thapa-8a9557304/"
+              target="_blank"
+            >
+              <div class="linkedin">
+                <ion-icon name="logo-linkedin"></ion-icon>
+              </div>
+            </a>
+          </li>
+          <li class="social-icon__item">
+            <a
+              class="social-icon__link"
+              href="https://github.com/BibekThapa12"
+              target="_blank"
+            >
+              <div class="facebook">
+                <ion-icon name="logo-github"></ion-icon>
+              </div>
+            </a>
+          </li>
+          <li class="social-icon__item">
+            <a
+              class="social-icon__link"
+              href="https://www.instagram.com/bibekthapa86/"
+              target="_blank"
+            >
+              <div class="instagram">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </div>
+            </a>
+          </li>
+        </ul>
+        <ul class="menuS">
+          <li class="menu__item"><a class="menu__link" href="#">Home</a></li>
+          <li class="menu__item">
+            <a class="menu__link" href="#about">About</a>
+          </li>
+
+          <li class="menu__item">
+            <a class="menu__link" href="#skills">Skills</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#services">Services</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#contact">Contact</a>
+          </li>
+        </ul>
+        <p>&copy;2024 Bibek Thapa | All Rights Reserved</p>
+      
+      </footer>
+      
+    </div>
+
+  </div>
+  <script>
+    function navigateToContact() {
+      window.location.href = '#contact';
+    }
+    </script>
+  <!-- js form validation -->
+  <script>
+    let errorTimeout;
+  
+    function validateForm() {
+      const nameInput = document.getElementById('name');
+      const emailInput = document.getElementById('email');
+      const messageInput = document.getElementById('message');
+      const errorMessage = document.getElementById('errorMessage');
+  
+      // Reset the error message
+      clearErrorMessage();
+  
+      // 1. Validate that all fields are filled
+      if (nameInput.value.trim() === '' || emailInput.value.trim() === '' || messageInput.value.trim() === '') {
+        showErrorMessage('Please fill in all fields.');
+        return false;
+      }
+  
+      // 2. Validate email format
+      const emailRegex = /\S+@\S+\.\S+/;
+      if (!emailRegex.test(emailInput.value)) {
+        showErrorMessage('Please enter a valid email address.');
+        return false;
+      }
+  
+      // If all validations pass, submit the form
+      return true;
+    }
+  
+    function showErrorMessage(message) {
+      const errorMessage = document.getElementById('errorMessage');
+      errorMessage.textContent = message;
+      errorMessage.style.display = 'block';
+  
+      // Clear any existing timeout
+      clearTimeout(errorTimeout);
+  
+      // Set a new timeout to hide the error message after 5 seconds
+      errorTimeout = setTimeout(clearErrorMessage, 5000);
+  
+      // Clear the input fields
+      clearInputFields();
+    }
+  
+    function clearErrorMessage() {
+      const errorMessage = document.getElementById('errorMessage');
+      errorMessage.textContent = '';
+      errorMessage.style.display = 'none';
+    }
+  
+    function clearInputFields() {
+      const nameInput = document.getElementById('name');
+      const emailInput = document.getElementById('email');
+      const messageInput = document.getElementById('message');
+  
+      nameInput.value = '';
+      emailInput.value = '';
+      messageInput.value = '';
+    }
+  
+    // Clear input fields when the form is submitted successfully
+   // document.getElementById('myForm').addEventListener('submit', clearInputFields);
+  </script>
+ 
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script>
+      const body = document.querySelector("body"),
+        nav = document.querySelector("nav"),
+        modeToggle = document.querySelector(".dark-light"),
+        searchToggle = document.querySelector(".searchToggle"),
+        sidebarOpen = document.querySelector(".sidebarOpen"),
+        siderbarClose = document.querySelector(".siderbarClose");
+
+      let getMode = localStorage.getItem("mode");
+      if (getMode && getMode === "dark-mode") {
+        body.classList.add("dark");
+      }
+
+      // js code to toggle dark and light mode
+      modeToggle.addEventListener("click", () => {
+        modeToggle.classList.toggle("active");
+        body.classList.toggle("dark");
+
+        // js code to keep user selected mode even page refresh or file reopen
+        if (!body.classList.contains("dark")) {
+          localStorage.setItem("mode", "light-mode");
+        } else {
+          localStorage.setItem("mode", "dark-mode");
+        }
+      });
+
+      // js code to toggle search box
+      searchToggle.addEventListener("click", () => {
+        searchToggle.classList.toggle("active");
+      });
+
+      //   js code to toggle sidebar
+      sidebarOpen.addEventListener("click", () => {
+        nav.classList.add("active");
+      });
+
+      body.addEventListener("click", (e) => {
+        let clickedElm = e.target;
+
+        if (
+          !clickedElm.classList.contains("sidebarOpen") &&
+          !clickedElm.classList.contains("menu")
+        ) {
+          nav.classList.remove("active");
+        }
+      });
+    </script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed("#element", {
+        strings: ["Web Developer", "Youtuber", "Graphics Designer","App Developer", "Learner"],
+        typeSpeed: 50,
+        loop: true, // Make it infinite
+      });
+    </script>
+    <!-- js code for skill animation on scroll -->
+    <script>
+      // Function to check if an element is in the viewport
+      function isInViewport(element) {
+          var rect = element.getBoundingClientRect();
+          return (
+              rect.top >= 0 &&
+              rect.left >= 0 &&
+              rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+              rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+          );
+      }
+
+      // Function to add animation class when element is in viewport
+      function animateOnScroll(element, animationClass) {
+          if (isInViewport(element) && !element.classList.contains(animationClass)) {
+              element.classList.add(animationClass);
+          }
+      }
+
+      // Function to handle scroll event
+      function handleScroll() {
+          var programmingSkills = document.querySelectorAll('#programming .skill li span');
+          programmingSkills.forEach(function(skill) {
+              animateOnScroll(skill, 'html');
+          });
+
+          var platformSkills = document.querySelectorAll('#platforms .skill li span');
+          platformSkills.forEach(function(skill) {
+              animateOnScroll(skill, 'wordpress');
+          });
+
+          var programSkills = document.querySelectorAll('#programs .skill li span');
+          programSkills.forEach(function(skill) {
+              animateOnScroll(skill, 'dreamweaver');
+          });
+      }
+
+      // Add scroll event listener
+      window.addEventListener('scroll', handleScroll);
+  </script>
+    <!--javascript code for testimonial section-->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
+      integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script type="text/javascript">
+      $(".slider").slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrow: false,
+        dots: true,
+        speed: 1000,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        infinite: true,
+      });
+      /*js function to download and view the resume*/
+      function downloadResume() {
+        var resumeUrl = "/assets/docs/My resume.pdf";
+        // Open the resume in a new tab
+        window.open(resumeUrl, "_blank");
+      }
+    </script>
+    <!--Js for about me page-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+    <script>
+      // Function to start the counter animation
+      function startCounter() {
+          $(".count").each(function () {
+              var $this = $(this);
+              var countTo = $this.attr("data-count");
+      
+              $({ countNum: $this.text() }).animate(
+                  { countNum: countTo },
+                  {
+                      duration: 2000,
+                      easing: "linear",
+                      step: function () {
+                          $this.text(Math.floor(this.countNum));
+                      },
+                      complete: function () {
+                          $this.text(this.countNum);
+                      },
+                  }
+              );
+          });
+      }
+      
+      // Check if the element is in viewport
+      function isScrolledIntoView(elem) {
+          var docViewTop = $(window).scrollTop();
+          var docViewBottom = docViewTop + $(window).height();
+          var elemTop = $(elem).offset().top;
+          return elemTop <= docViewBottom;
+      }
+      
+      // Check if the counter elements are in viewport, and start counter if so
+      $(window).scroll(function () {
+          $(".count").each(function () {
+              if (isScrolledIntoView(this)) {
+                  startCounter();
+              }
+          });
+      });
+      </script>
+    <!--animate on scroll-->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        // offset:300,
+        //duration:1000
+      });
+    </script>
+    <!-- function for animation while in viewport for skills tab -->
+    <script>
+      // Function to check if an element is in the viewport
+      function isInViewport(element) {
+        var rect = element.getBoundingClientRect();
+        return (
+          rect.top >= 0 &&
+          rect.left >= 0 &&
+          rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+          rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+        );
+      }
+   
+      // Function to add animation class when element is in viewport
+      function animateOnScroll(element, animationClass) {
+        if (isInViewport(element) && !element.classList.contains(animationClass)) {
+          element.classList.add(animationClass);
+        }
+      }
+   
+      // Function to handle scroll event
+      function handleScroll() {
+        var programmingSkills = document.querySelectorAll('#programming .skill li span');
+        programmingSkills.forEach(function(skill, index) {
+          var animationClass;
+          switch (index) {
+            case 0:
+              animationClass = 'html';
+              break;
+            case 1:
+              animationClass = 'css';
+              break;
+            case 2:
+              animationClass = 'php';
+              break;
+            case 3:
+              animationClass = 'javascript';
+              break;
+            case 4:
+              animationClass = 'jquery';
+              break;
+          }
+          animateOnScroll(skill, animationClass);
+        });
+   
+        var platformSkills = document.querySelectorAll('#platforms .skill li span');
+        platformSkills.forEach(function(skill, index) {
+          var animationClass;
+          switch (index) {
+            case 0:
+              animationClass = 'wordpress';
+              break;
+            case 1:
+              animationClass = 'prestashop';
+              break;
+            case 2:
+              animationClass = 'joomla';
+              break;
+            case 3:
+              animationClass = 'blogger';
+              break;
+            case 4:
+              animationClass = 'tridion';
+              break;
+          }
+          animateOnScroll(skill, animationClass);
+        });
+   
+        var programSkills = document.querySelectorAll('#programs .skill li span');
+        programSkills.forEach(function(skill, index) {
+          var animationClass;
+          switch (index) {
+            case 0:
+              animationClass = 'dreamweaver';
+              break;
+            case 1:
+              animationClass = 'illustrator';
+              break;
+            case 2:
+              animationClass = 'photoshop';
+              break;
+            case 3:
+              animationClass = 'premiere';
+              break;
+            case 4:
+              animationClass = 'flash';
+              break;
+          }
+          animateOnScroll(skill, animationClass);
+        });
+      }
+   
+      // Add scroll event listener
+      window.addEventListener('scroll', handleScroll);
+    </script>
+    <!-- Script for loader -->
+    <script>
+    window.addEventListener('load', function() {
+      var loaderContainer = document.getElementById('loader');
+      loaderContainer.style.display = 'none';
+    });
+    
+    // Show the loader when navigating to a new page
+    window.addEventListener('beforeunload', function() {
+      var loaderContainer = document.getElementById('loader');
+      loaderContainer.style.display = 'flex';
+    });
+  </script>
+  <script>
+   window.addEventListener('load', function() {
+    var loaderContainer = document.getElementById('loader');
+    loaderContainer.style.display = 'none';
+  });
+  
+  // Show the loader when navigating to a new page
+  window.addEventListener('beforeunload', function() {
+    var loaderContainer = document.getElementById('loader');
+    loaderContainer.style.display = 'flex';
+  });
+</script>
+<script>
+  window.addEventListener('load', function() {
+  var loaderContainer = document.getElementById('loader');
+  loaderContainer.style.display = 'none';
+  document.body.style.overflowX  = "hidden";
+  document.body.style.overflowY  = "auto";
+});
+
+window.addEventListener('beforeunload', function() {
+  var loaderContainer = document.getElementById('loader');
+  loaderContainer.style.display = 'flex';
+});
+</script>
+<script>
+<!-- javascript code for find in page  -->
+document.getElementById("findButton").addEventListener("click", function() {
+  var searchText = document.getElementById("searchText").value;
+
+  if (searchText.trim() !== "") {
+    // Open find in page window
+    window.find(searchText);
+
+    // Simulate pressing Enter
+    var enterEvent = new KeyboardEvent("keydown", {
+      bubbles: true,
+      cancelable: true,
+      key: "Enter",
+      code: "Enter"
+    });
+    document.dispatchEvent(enterEvent);
+  }
+});
+</script>
+<!-- back to top -->
+<script>
+  // Get the "Back to Top" icon element
+const backToTopIcon = document.getElementById('backToTop');
+
+// Show the "Back to Top" icon when scrolling down a certain distance
+window.addEventListener('scroll', () => {
+  if (window.pageYOffset > 100) {
+    backToTopIcon.style.display = 'block';
+  } else {
+    backToTopIcon.style.display = 'none';
+  }
+});
+
+// Scroll to the top of the page when the "Back to Top" icon is clicked
+backToTopIcon.addEventListener('click', () => {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+});
+</script>
+
+    
+  </body>
+</html>
