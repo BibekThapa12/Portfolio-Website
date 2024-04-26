@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
       <link rel="icon" href="/assets/img/title.ico" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    
+
     <title>Bibek Thapa - Developer</title>
     <!-- animation on scroll library -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
@@ -909,53 +909,48 @@
       nomodule
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
     ></script>
-    <script>
-      const body = document.querySelector("body"),
-        nav = document.querySelector("nav"),
-        modeToggle = document.querySelector(".dark-light"),
-        searchToggle = document.querySelector(".searchToggle"),
-        sidebarOpen = document.querySelector(".sidebarOpen"),
-        siderbarClose = document.querySelector(".siderbarClose");
+   <script>
+const body = document.querySelector("body"),
+  nav = document.querySelector("nav"),
+  modeToggle = document.querySelector(".dark-light"),
+  searchToggle = document.querySelector(".searchToggle"),
+  sidebarOpen = document.querySelector(".sidebarOpen"),
+  siderbarClose = document.querySelector(".siderbarClose");
 
-      let getMode = localStorage.getItem("mode");
-      if (getMode && getMode === "dark-mode") {
-        body.classList.add("dark");
-      }
+// Set the default mode to dark
+body.classList.add("dark");
+localStorage.setItem("mode", "dark-mode");
 
-      // js code to toggle dark and light mode
-      modeToggle.addEventListener("click", () => {
-        modeToggle.classList.toggle("active");
-        body.classList.toggle("dark");
+// js code to toggle dark and light mode
+modeToggle.addEventListener("click", () => {
+  modeToggle.classList.toggle("active");
+  body.classList.toggle("dark");
 
-        // js code to keep user selected mode even page refresh or file reopen
-        if (!body.classList.contains("dark")) {
-          localStorage.setItem("mode", "light-mode");
-        } else {
-          localStorage.setItem("mode", "dark-mode");
-        }
-      });
+  // js code to keep user selected mode even page refresh or file reopen
+  if (!body.classList.contains("dark")) {
+    localStorage.setItem("mode", "light-mode");
+  } else {
+    localStorage.setItem("mode", "dark-mode");
+  }
+});
 
-      // js code to toggle search box
-      searchToggle.addEventListener("click", () => {
-        searchToggle.classList.toggle("active");
-      });
+// js code to toggle search box
+searchToggle.addEventListener("click", () => {
+  searchToggle.classList.toggle("active");
+});
 
-      //   js code to toggle sidebar
-      sidebarOpen.addEventListener("click", () => {
-        nav.classList.add("active");
-      });
+// js code to toggle sidebar
+sidebarOpen.addEventListener("click", () => {
+  nav.classList.add("active");
+});
 
-      body.addEventListener("click", (e) => {
-        let clickedElm = e.target;
-
-        if (
-          !clickedElm.classList.contains("sidebarOpen") &&
-          !clickedElm.classList.contains("menu")
-        ) {
-          nav.classList.remove("active");
-        }
-      });
-    </script>
+body.addEventListener("click", (e) => {
+  let clickedElm = e.target;
+  if (!clickedElm.classList.contains("sidebarOpen") && !clickedElm.classList.contains("menu")) {
+    nav.classList.remove("active");
+  }
+});
+</script>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script>
       var typed = new Typed("#element", {
