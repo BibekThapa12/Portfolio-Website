@@ -11,6 +11,11 @@
     min-height: 100vh;
     overflow-x: hidden;
   }
+  @media(max-width:980px){
+    .wholeBodyContainer{
+        overflow-x: hidden!important;
+      }
+  }
  /* Custom Scrollbar */
 ::-webkit-scrollbar {
 width: 15px; /* Width of the scrollbar */
